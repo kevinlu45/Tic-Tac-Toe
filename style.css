@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.title {
+  text-align: center;
+  background-color: blue;
+  margin-bottom: 0;
+}
+.game-content {
+  display: flex;
+  flex-grow: 1;
+}
+.wrapper-player1{
+  flex: 1 1 auto;
+  background-color: orange;
+}
+.wrapper-game{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.wrapper-player2 {
+  flex: 1 1 auto;
+  background-color: orange;
+}
+.board{
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#tile {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
