@@ -3,16 +3,24 @@
   flex-direction: column;
   height: 100vh;
 }
+body {
+  margin: 0;
+}
 .title {
   text-align: center;
-  background-color: blue;
+  background-color: gray;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .game-content {
   display: flex;
   flex-grow: 1;
 }
 .wrapper-player1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
   background-color: orange;
 }
@@ -20,9 +28,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   flex: 1 1 auto;
 }
 .wrapper-player2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
   background-color: orange;
 }
@@ -40,4 +53,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#pointer1,#pointer2 {
+  height: 100px;
+  width: 70px;
+  background-color: inherit;
 }
